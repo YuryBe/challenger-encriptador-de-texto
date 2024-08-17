@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador y Desencriptador</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="/script.js"></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="/assets/minnionLogo.avif" alt="Logo">
+        <h1>Encriptador y desencriptador de texto</h1>
+    </header>
+
+    <div class="container">
+        <div class="texto_area">
+            <textarea id="ingrese_texto" placeholder="Ingrese el texto aquí"></textarea>
+            <img src="/assets/alerta_letras.png" alt="Logo">
+        </div>
+        <div class="info_area">
+            <img class="info_image" src="/assets/minnions.avif" alt="Minnions celebrando">
+            <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+            <textarea id="resultado_texto" readonly></textarea>
+        </div>
+    </div>
+
+    <div class="boton_area">
+        <button onclick="encriptar()">Encriptar</button>
+        <button onclick="desencriptar()">Desencriptar</button>
+    </div>
+
+    <footer>
+        <p>Elaborado por Yury Benites </p>
+    </footer>
+
+    
+</body>
+</html>

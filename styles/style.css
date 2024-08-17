@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Ga+Maamli&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --color-primario:   white;
+    --color-secundario: #F7E7DC;
+    --color-terciario:  #758694;
+    --color-oscuro:     #1679AB;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    background-color: var(--color-secundario);
+    color: var(--color-oscuro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-oscuro);
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 250px;
+    
+    
+}
+
+.logo {
+    height: 80px;
+    border-radius: 10px;
+    
+
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    color: var(--color-secundario);
+    
+
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-primario);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px black;
+    max-width: 1000px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media(min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .texto_area, .info_area {
+        width: 48%;
+    }
+}
+
+textarea {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid var(--color-terciario);
+    resize: none;
+    background-color: var(--color-secundario);
+    color: var(--color-oscuro);
+}
+
+textarea#ingrese_texto {
+    height: 190px;
+    margin-top: 10px;
+    padding: 1px;
+    display: flex;
+    
+}
+
+textarea#resultado_texto {
+    height: 150px;
+    margin-top: 10px;
+    padding: 1px;
+}
+
+.info_image {
+    width: 100%;
+    max-width: 150px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.info_area p {
+    text-align: center;
+    font-size: 16px;
+    color: var(--color-oscuro);
+}
+
+.boton_area {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-oscuro);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-terciario);
+}
+
+footer {
+    margin-top: 20px;
+    padding: 5px;
+    width: 100%;
+    background-color: var(--color-oscuro);
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+}
